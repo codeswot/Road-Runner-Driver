@@ -31,6 +31,7 @@ dependencies:
   smooth_page_indicator: ^1.0.0+2
   dotted_border: ^2.0.0+2
   flutter_rating_bar: ^4.0.1
+  swipeable_tile: ^2.0.0+1
 
 
   #networking
@@ -73,6 +74,7 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/illustrations/
+    - assets/images/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

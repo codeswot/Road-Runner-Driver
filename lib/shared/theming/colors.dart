@@ -39,4 +39,5 @@ class AppColors {
   static const Color cosmicPurple = Color(0xff8A3FA7);
   static const Color rageRed = Color(0xffBA0000);
   static const Color sacredYellow = Color(0xffFFD700);
+  static const Color fadedBlue = Color(0xffECF7FE);
 }

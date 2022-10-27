@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:road_runner_driver/profile/profile.dart';
+import 'package:road_runner_driver/ride/ride.dart';
 import 'package:road_runner_driver/shared/shared.dart';
+import 'package:road_runner_driver/home/services/services.dart';
 
 import '../widgets/widgets.dart';
 
@@ -15,6 +17,8 @@ class HomeScreenDashboard extends StatefulWidget {
 }
 
 class _HomeScreenDashboardState extends State<HomeScreenDashboard> {
+  PackageOrderService packageOrderService = PackageOrderService();
+  List<DropOffsModel> dropOffs = [];
   bool online = false;
 
   @override
@@ -83,6 +87,11 @@ class _HomeScreenDashboardState extends State<HomeScreenDashboard> {
                           onTap: (_, __, ___) {
                             setState(() {
                               online = true;
+                            });
+                            final packageOrder =
+                            packageOrderService.getMockPackages()[0];
+                            Future.delayed(const Duration(seconds: 3), (){
+                              context.push(RequestedRide.route(package: packageOrder));
                             });
                           },
                         ),

@@ -16,7 +16,7 @@ class OnboardingDataService {
         illustration: AppIllustrations.trackDelivery,
       ),
       const OnboardingDataModel(
-        title: 'Earn money as a rider',
+        title: 'Earn money as a ride',
         description: 'Become a Road runner and earn. ',
         illustration: AppIllustrations.orders,
       ),
