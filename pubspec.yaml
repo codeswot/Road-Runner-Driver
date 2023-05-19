@@ -18,7 +18,7 @@ dependencies:
   #UI
   cupertino_icons: ^1.0.2
   another_flushbar: ^1.10.29
-  argon_buttons_flutter: ^1.1.0
+  # argon_buttons_flutter: ^1.1.0
   push_notification: ^1.1.1
   otp_autofill: ^2.1.0
   swipe_refresh: ^1.0.2
@@ -45,6 +45,7 @@ dependencies:
   google_fonts: ^3.0.1
   image_cropper: ^2.0.3
   json_annotation: ^4.6.0
+  change_app_package_name: ^1.1.0
 
 
 dev_dependencies:

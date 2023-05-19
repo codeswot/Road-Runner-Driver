@@ -5,11 +5,12 @@ import '../../../../shared/shared.dart';
 import 'otp_verification.dart';
 
 class OtpTypeSelect extends StatefulWidget {
-  const OtpTypeSelect({Key? key, required this.userType}) : super(key: key);
+  const OtpTypeSelect({
+    Key? key,
+  }) : super(key: key);
 
-  final UserType userType;
-  static Route route({required UserType userType}) => MaterialPageRoute(
-        builder: (_) => OtpTypeSelect(userType: userType),
+  static Route route() => MaterialPageRoute(
+        builder: (_) => const OtpTypeSelect(),
       );
 
   @override
@@ -106,8 +107,7 @@ class _OtpTypeSelectState extends State<OtpTypeSelect> {
                       //send to valid type use (isEmail)
                       stop();
 
-                      context.push(OtpVerification.route(
-                          userType: widget.userType, isEmail: isEmail));
+                      context.push(OtpVerification.route(isEmail: isEmail));
                     },
                   ),
                 ),

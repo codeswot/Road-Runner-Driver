@@ -1,5 +1,6 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:road_runner_driver/app.dart';
 import 'package:road_runner_driver/home/home.dart';
 import 'package:road_runner_driver/shared/shared.dart';
 
@@ -122,14 +123,27 @@ class _LogInState extends State<LogIn> {
                     });
                   },
                 ),
-                SizedBox(height: 200 * ScreenRatio.heightRatio),
+                SizedBox(height: 150 * ScreenRatio.heightRatio),
                 Center(
                   child: PrimaryButton(
                     title: 'Log In',
                     onTap: (load, stop, state) async {
                       load();
                       await Future.delayed(const Duration(seconds: 2));
-                      context.pushAndRemoveUntil(HomeScreenDashboard.route());
+                      context.pushAndRemoveUntil(SignUpPersonalDetails.route());
+                      stop();
+                    },
+                  ),
+                ),
+                SizedBox(height: 16 * ScreenRatio.heightRatio),
+                Center(
+                  child: SecondaryButton(
+                    context,
+                    title: 'Sign Up',
+                    onTap: (load, stop, state) async {
+                      load();
+                      await Future.delayed(const Duration(seconds: 2));
+                      context.pushAndRemoveUntil(SignUpPersonalDetails.route());
                       stop();
                     },
                   ),

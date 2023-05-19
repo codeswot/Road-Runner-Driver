@@ -71,8 +71,7 @@ class _OnboardingHomeState extends State<OnboardingHome> {
                       curve: Curves.easeOut);
                 },
                 onTap: (_, __, ___) {
-                  context.push(
-                      SignUpPersonalDetails.route(userType: UserType.driver));
+                  context.push(LogIn.route());
                 },
               ),
             ),

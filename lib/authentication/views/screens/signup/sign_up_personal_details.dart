@@ -4,12 +4,10 @@ import 'package:road_runner_driver/authentication/views/views.dart';
 import 'package:road_runner_driver/shared/shared.dart';
 
 class SignUpPersonalDetails extends StatefulWidget {
-  const SignUpPersonalDetails({Key? key, required this.userType})
-      : super(key: key);
+  const SignUpPersonalDetails({Key? key}) : super(key: key);
 
-  final UserType userType;
-  static Route route({required UserType userType}) => MaterialPageRoute(
-        builder: (_) => SignUpPersonalDetails(userType: userType),
+  static Route route() => MaterialPageRoute(
+        builder: (_) => const SignUpPersonalDetails(),
       );
 
   @override
@@ -109,8 +107,7 @@ class _SignUpPersonalDetailsState extends State<SignUpPersonalDetails> {
                       await Future.delayed(const Duration(seconds: 2));
                       stop();
 
-                      context
-                          .push(OtpTypeSelect.route(userType: widget.userType));
+                      context.push(OtpTypeSelect.route());
                     },
                   ),
                 ),
