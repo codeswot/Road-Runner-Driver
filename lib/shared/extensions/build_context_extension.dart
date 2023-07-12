@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:road_runner_driver/shared/shared.dart';
+import 'package:road_runner_rider/shared/shared.dart';
 
 extension BuildContextExtensions on BuildContext {
   Future<T?> push<T extends Object?>(
@@ -97,7 +97,7 @@ extension BuildContextExtensions on BuildContext {
               message,
               style: TextStyle(color: Theme.of(this).canvasColor),
             ),
-            backgroundColor: Theme.of(this).textTheme.bodyText1?.color,
+            backgroundColor: Theme.of(this).textTheme.bodyLarge?.color,
             duration: duration,
           ),
         );

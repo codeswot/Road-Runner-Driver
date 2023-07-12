@@ -1,7 +1,7 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:road_runner_driver/onboarding/onboarding.dart';
-import 'package:road_runner_driver/shared/shared.dart';
+import 'package:road_runner_rider/onboarding/onboarding.dart';
+import 'package:road_runner_rider/shared/shared.dart';
 
 import '../../../authentication/authentication.dart';
 

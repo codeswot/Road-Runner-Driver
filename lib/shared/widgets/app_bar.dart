@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:road_runner_driver/shared/shared.dart';
+import 'package:road_runner_rider/shared/shared.dart';
 
 class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
   const CustomAppBar({Key? key, this.title, this.onBack, this.bottom})

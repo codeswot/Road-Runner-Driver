@@ -2,8 +2,8 @@ import 'dart:io';
 
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:road_runner_driver/authentication/views/views.dart';
-import 'package:road_runner_driver/shared/shared.dart';
+import 'package:road_runner_rider/authentication/views/views.dart';
+import 'package:road_runner_rider/shared/shared.dart';
 
 class DocumentUploadVehicle extends StatefulWidget {
   const DocumentUploadVehicle({Key? key}) : super(key: key);

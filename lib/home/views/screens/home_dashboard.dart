@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:road_runner_driver/profile/profile.dart';
-import 'package:road_runner_driver/shared/shared.dart';
+import 'package:road_runner_rider/profile/profile.dart';
+import 'package:road_runner_rider/shared/shared.dart';
 
 import '../widgets/widgets.dart';
 

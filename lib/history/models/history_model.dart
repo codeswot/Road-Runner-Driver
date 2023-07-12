@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:road_runner_driver/shared/shared.dart';
+import 'package:road_runner_rider/shared/shared.dart';
 
 part 'history_model.g.dart';
 

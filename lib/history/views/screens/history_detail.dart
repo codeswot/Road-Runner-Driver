@@ -2,8 +2,8 @@ import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:road_runner_driver/history/models/history_model.dart';
-import 'package:road_runner_driver/shared/shared.dart';
+import 'package:road_runner_rider/history/models/history_model.dart';
+import 'package:road_runner_rider/shared/shared.dart';
 
 class HistoryDetail extends StatelessWidget {
   const HistoryDetail(this.history, {Key? key}) : super(key: key);

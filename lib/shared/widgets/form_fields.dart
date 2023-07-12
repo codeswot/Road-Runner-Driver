@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:dotted_border/dotted_border.dart';
 import 'package:flutter/material.dart';
-import 'package:road_runner_driver/shared/shared.dart';
+import 'package:road_runner_rider/shared/shared.dart';
 
 class AppTextField extends StatelessWidget {
   const AppTextField({

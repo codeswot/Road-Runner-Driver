@@ -1,8 +1,8 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:road_runner_driver/app.dart';
-import 'package:road_runner_driver/home/home.dart';
-import 'package:road_runner_driver/shared/shared.dart';
+import 'package:road_runner_rider/app.dart';
+import 'package:road_runner_rider/home/views/screens/home_dashboard.dart';
+import 'package:road_runner_rider/shared/shared.dart';
 
 class LogIn extends StatefulWidget {
   const LogIn({Key? key}) : super(key: key);
@@ -130,7 +130,7 @@ class _LogInState extends State<LogIn> {
                     onTap: (load, stop, state) async {
                       load();
                       await Future.delayed(const Duration(seconds: 2));
-                      context.pushAndRemoveUntil(SignUpPersonalDetails.route());
+                      context.pushAndRemoveUntil(HomeScreenDashboard.route());
                       stop();
                     },
                   ),
