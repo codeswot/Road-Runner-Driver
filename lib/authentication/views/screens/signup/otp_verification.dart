@@ -2,19 +2,14 @@ import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../shared/shared.dart';
-import '../signing/signing.dart';
 import 'driver_specific/driver_specific.dart';
 
 class OtpVerification extends StatelessWidget {
-  const OtpVerification(
-      {Key? key, required this.userType, required this.isEmail})
-      : super(key: key);
+  const OtpVerification({Key? key, required this.isEmail}) : super(key: key);
 
-  final UserType userType;
   final bool isEmail;
-  static Route route({required UserType userType, required bool isEmail}) =>
-      MaterialPageRoute(
-        builder: (_) => OtpVerification(userType: userType, isEmail: isEmail),
+  static Route route({required bool isEmail}) => MaterialPageRoute(
+        builder: (_) => OtpVerification(isEmail: isEmail),
       );
 
   @override
@@ -100,12 +95,7 @@ class OtpVerification extends StatelessWidget {
                       load();
                       await Future.delayed(const Duration(seconds: 2));
                       stop();
-                      if (userType == UserType.driver) {
-                        context.push(DocumentUploadDriver.route());
-                      } else {
-                        context.pushAndRemoveUntil(LogIn.route(),
-                            rootNavigator: true);
-                      }
+                      context.push(DocumentUploadDriver.route());
                     },
                   ),
                 ),

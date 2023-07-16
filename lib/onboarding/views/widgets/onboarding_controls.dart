@@ -1,7 +1,8 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
-import 'package:argon_buttons_flutter/argon_buttons_flutter.dart';
+
 import 'package:flutter/material.dart';
-import 'package:road_runner_driver/shared/shared.dart';
+import 'package:road_runner_rider/shared/shared.dart';
+import 'package:road_runner_rider/shared/widgets/bare_argon.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class OnboardingControls extends StatelessWidget {

@@ -1,9 +1,9 @@
-name: road_runner_driver
-description: The Driver App to Road Runner
+name: road_runner_rider
+description: The Rider App to Road Runner
 
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.0+1
+version: 1.0.0+2
 
 environment:
   sdk: ">=2.17.6 <3.0.0"
@@ -18,7 +18,7 @@ dependencies:
   #UI
   cupertino_icons: ^1.0.2
   another_flushbar: ^1.10.29
-  argon_buttons_flutter: ^1.1.0
+  # argon_buttons_flutter: ^1.1.0
   push_notification: ^1.1.1
   otp_autofill: ^2.1.0
   swipe_refresh: ^1.0.2
@@ -46,6 +46,7 @@ dependencies:
   google_fonts: ^3.0.1
   image_cropper: ^2.0.3
   json_annotation: ^4.6.0
+  change_app_package_name: ^1.1.0
 
 
 dev_dependencies:
@@ -57,6 +58,7 @@ dev_dependencies:
   json_serializable: ^6.3.1
   mobx_codegen: ^2.0.7
   flutter_launcher_icons: ^0.9.3
+  rename: ^2.1.1
 flutter_icons:
   android: "launcher_icon"
   ios: trueicon.jpeg

@@ -1,4 +1,4 @@
-package app.roadrunner.driver.road_runner_driver
+package com.roadrunner.rider
 
 import io.flutter.embedding.android.FlutterActivity
 

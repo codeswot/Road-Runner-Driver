@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="app.roadrunner.driver.road_runner_driver">
+    package="com.roadrunner.rider">
    <application
-        android:label="road_runner_driver"
+        android:label="Road Runner Rider" 
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity

@@ -1,4 +1,4 @@
-import 'package:road_runner_driver/shared/shared.dart';
+import 'package:road_runner_rider/shared/shared.dart';
 
 import '../models/models.dart';
 

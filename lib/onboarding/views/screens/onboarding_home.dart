@@ -1,7 +1,7 @@
 import 'package:adaptive_theme/adaptive_theme.dart';
 import 'package:flutter/material.dart';
-import 'package:road_runner_driver/onboarding/onboarding.dart';
-import 'package:road_runner_driver/shared/shared.dart';
+import 'package:road_runner_rider/onboarding/onboarding.dart';
+import 'package:road_runner_rider/shared/shared.dart';
 
 import '../../../authentication/authentication.dart';
 
@@ -71,8 +71,7 @@ class _OnboardingHomeState extends State<OnboardingHome> {
                       curve: Curves.easeOut);
                 },
                 onTap: (_, __, ___) {
-                  context.push(
-                      SignUpPersonalDetails.route(userType: UserType.driver));
+                  context.push(LogIn.route());
                 },
               ),
             ),
